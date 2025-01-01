@@ -3,7 +3,7 @@ import LegalSection from './shared/LegalSection';
 import LegalLayout from './shared/LegalLayout';
 
 export default function TermsOfService() {
-  const lastUpdated = "March 14, 2024";
+  const lastUpdated = "January 1, 2025";
 
   return (
     <LegalLayout

@@ -14,7 +14,7 @@ const Section = ({ title, icon: Icon, children }: { title: string; icon: React.E
 );
 
 export default function PrivacyPolicy() {
-  const lastUpdated = "March 14, 2024";
+  const lastUpdated = "January 1, 2025";
 
   return (
     <div className="min-h-screen bg-black pt-20">
