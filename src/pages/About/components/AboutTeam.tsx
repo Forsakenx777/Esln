@@ -3,7 +3,7 @@ import Card from '@/components/ui/Card';
 
 const team = [
   {
-    name: "Sandesh Shrestha",
+    name: "Forsaken",
     role: "Founder & CEO",
     image: "https://avatars.githubusercontent.com/u/12322728?v=4"
   },
