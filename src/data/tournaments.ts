@@ -5,7 +5,7 @@ export const tournaments = [
     game: "PUBG Mobile",
     prize: "NPR 10,000",
     date: "Coming Soon",
-    registrationOpen: true,
+    registrationOpen: false,
     image: "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/12/gia-lap-pubg-mobile-11.jpg",
     googleFormLink: "https://forms.gle/CMV2NWm2EETgrAKz8",
     venue: "Online",
