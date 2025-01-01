@@ -76,7 +76,7 @@ export default function PrivacyPolicy() {
 
           <div className="mt-12 pt-8 border-t border-gray-800">
             <p className="text-sm text-gray-400 text-center">
-              If you have any questions about this Privacy Policy, please contact us at privacy@example.com
+              If you have any questions about this Privacy Policy, please contact us at esportsleaguenepal2024@gmail.com
             </p>
           </div>
         </div>
