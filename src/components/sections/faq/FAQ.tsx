@@ -5,7 +5,7 @@ import FAQItem from './FAQItem';
 const faqs = [
   {
     question: "How do I register for tournaments?",
-    answer: "Registration is simple! Create an account on ESLN, verify your details, and navigate to the Tournaments section. Choose your preferred tournament and follow the registration steps. Make sure to read the tournament rules and requirements before registering."
+    answer: "Registration is simple! Navigate to the Tournaments section. Choose your preferred tournament and follow the registration steps. Make sure to read the tournament rules and requirements before registering."
   },
   {
     question: "What games do you currently support?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Are there entry fees for tournaments?",
-    answer: "Entry fees vary by tournament tier. While some community tournaments are free to enter, professional tournaments may have entry fees. All fee details are clearly listed on each tournament's registration page."
+    answer: "Entry fees vary by tournament tier. All fee details are clearly listed on each tournament's registration page."
   },
   {
     question: "How are prize pools distributed?",

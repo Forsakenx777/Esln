@@ -1,6 +1,6 @@
 export const tournaments = [
   {
-    id: 'esln-esportify-season-1',
+    id: 'pubgmobile',
     title: "ESLN Esportify Season 1",
     game: "PUBG Mobile",
     prize: "NPR 10,000",
@@ -13,37 +13,34 @@ export const tournaments = [
     description: "Join the inaugural season of ESLN Esportify and compete against the Best!",
     rules: [
       "Players must be 16 years or older",
-      "Teams must have 4 players + 1 substitute",
-      "All players must be from Nepal",
+      "Teams must have 4 players + 1 substitute (Optional)",
       "No emulators allowed",
       "Fair play and sportsmanlike conduct required"
     ],
     schedule: [
       {
         phase: "Registration",
-        date: "March 20 - April 5, 2024",
+        date: "TBD",
         details: "Team registration period"
       },
       {
         phase: "Qualifiers",
-        date: "April 10 - April 15, 2024",
+        date: "TBD",
         details: "Online qualification rounds"
       },
       {
         phase: "Finals",
-        date: "April 20, 2024",
+        date: "TBD",
         details: "Top 16 teams battle for championship"
       }
     ],
     requirements: [
-      "Valid photo ID",
       "Stable internet connection",
-      "Discord account for communication",
-      "PUBG Mobile account level 30+"
+      "PUBG Mobile account level 20+"
     ]
   },
   {
-    id: 'upcoming-tournament-1',
+    id: 'upcomingtournament',
     title: "Coming Soon",
     game: "To Be Announced",
     prize: "To Be Announced",
