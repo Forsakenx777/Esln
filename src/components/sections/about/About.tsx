@@ -1,4 +1,4 @@
-import { Trophy, Target, Users } from 'lucide-react';
+import { Trophy, Target, Users, Star, Shield, Rocket } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import Container from '@/components/ui/Container';
 import FeatureCard from './FeatureCard';
@@ -20,6 +20,21 @@ const features = [
     icon: Users,
     title: 'Vibrant Community',
     description: 'Join a thriving network of players, teams, and enthusiasts who share your passion for competitive gaming.'
+  },
+  {
+    icon: Star,
+    title: 'Professional Standards',
+    description: 'Experience tournaments organized following international esports standards and best practices.'
+  },
+  {
+    icon: Shield,
+    title: 'Fair Play',
+    description: 'Compete in a regulated environment with strict anti-cheat measures and professional referees.'
+  },
+  {
+    icon: Rocket,
+    title: 'Growth Opportunities',
+    description: 'Get exposure to professional teams, sponsors, and opportunities in the esports industry.'
   }
 ];
 
@@ -30,20 +45,20 @@ export default function About() {
   });
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-black">
+    <section id="about" className="py-24 bg-gradient-to-b from-black via-gray-900 to-black">
       <Container>
-        <div className="text-center mb-12 md:mb-16 px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <div className="text-center mb-16 px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
             Why Choose ESLN?
           </h2>
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             We're building the future of Nepali esports, providing a comprehensive platform for gamers to compete, grow, and succeed.
           </p>
         </div>
         
         <div 
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-0"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
         >
           {features.map((feature, index) => (
             <div

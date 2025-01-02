@@ -1,5 +1,10 @@
+import { HelmetProvider } from 'react-helmet-async';
 import AppRouter from './router';
 
 export default function App() {
-  return <AppRouter />;
+  return (
+    <HelmetProvider>
+      <AppRouter />
+    </HelmetProvider>
+  );
 }

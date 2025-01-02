@@ -2,10 +2,11 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { tournaments } from '@/data/tournaments';
 import Container from '@/components/ui/Container';
 import Button from '@/components/ui/Button';
-import HeroSection from './components/HeroSection';
-import TournamentOverview from './components/TournamentOverview';
-import ScheduleTimeline from './components/ScheduleTimeline';
-import RegistrationCard from './components/RegistrationCard';
+import TournamentHero from '@/components/tournaments/TournamentHero';
+import TournamentInfo from '@/components/tournaments/details/TournamentInfo';
+import TournamentSchedule from '@/components/tournaments/details/TournamentSchedule';
+import TournamentRules from '@/components/tournaments/details/TournamentRules';
+import TournamentRegistration from '@/components/tournaments/details/TournamentRegistration';
 
 export default function TournamentDetails() {
   const { id } = useParams();
@@ -26,7 +27,7 @@ export default function TournamentDetails() {
   return (
     <div className="min-h-screen pt-20">
       <Container>
-        <HeroSection 
+        <TournamentHero 
           title={tournament.title}
           game={tournament.game}
           image={tournament.image}
@@ -34,7 +35,7 @@ export default function TournamentDetails() {
 
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <TournamentOverview
+            <TournamentInfo
               date={tournament.date}
               prize={tournament.prize}
               venue={tournament.venue}
@@ -43,14 +44,19 @@ export default function TournamentDetails() {
             />
 
             {tournament.schedule && (
-              <ScheduleTimeline schedule={tournament.schedule} />
+              <TournamentSchedule schedule={tournament.schedule} />
+            )}
+
+            {tournament.rules && (
+              <TournamentRules rules={tournament.rules} />
             )}
           </div>
 
-          <div className="space-y-8">
-            <RegistrationCard
+          <div>
+            <TournamentRegistration
               registrationOpen={tournament.registrationOpen}
               googleFormLink={tournament.googleFormLink}
+              requirements={tournament.requirements}
             />
           </div>
         </div>

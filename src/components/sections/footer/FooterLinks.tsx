@@ -13,15 +13,15 @@ const footerLinks = [
     title: 'Tournaments',
     links: [
       { label: 'Active Events', href: '/tournaments' },
-      { label: 'Past Events', href: '/NotFound' }
+      { label: 'Past Events', href: '/past-events' }
     ]
   },
   {
-    title: 'Get Involved',
+    title: 'Resources',
     links: [
-      { label: 'Join the Community', href: '/NotFound' },
-      { label: 'Become a Partner', href: '/NotFound' },
-      { label: 'Volunteer with Us', href: '/NotFound' }
+      { label: 'Blog', href: '/blog' },
+      { label: 'Join the Community', href: '/tournaments' },
+      { label: 'Become a Partner', href: '/about#team' }
     ]
   }
 ];

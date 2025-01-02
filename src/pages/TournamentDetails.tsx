@@ -81,20 +81,6 @@ export default function TournamentDetails() {
               </Card>
             )}
 
-            {/* Rules */}
-            {tournament.rules && (
-              <Card>
-                <h2 className="text-3xl font-bold text-white mb-4">Tournament Rules</h2>
-                <ul className="space-y-4">
-                  {tournament.rules.map((rule, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Shield className="w-6 h-6 text-gray-400" />
-                      <span className="text-gray-300">{rule}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            )}
           </div>
 
           {/* Sidebar */}
@@ -117,6 +103,21 @@ export default function TournamentDetails() {
                 <p className="text-yellow-400">Registration coming soon</p>
               )}
             </Card>
+
+             {/* Rules */}
+            {tournament.rules && (
+              <Card>
+                <h2 className="text-3xl font-bold text-white mb-4">Tournament Rules</h2>
+                <ul className="space-y-4">
+                  {tournament.rules.map((rule, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <Shield className="w-6 h-6 text-gray-400" />
+                      <span className="text-gray-300">{rule}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            )}
 
             {/* Requirements */}
             {tournament.requirements && (

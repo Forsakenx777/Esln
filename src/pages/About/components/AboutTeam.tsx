@@ -26,6 +26,7 @@ export default function AboutTeam() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4 }}
       className="mb-24"
+      id="team"
     >
       <h2 className="text-3xl font-bold text-white text-center mb-12">Our Team</h2>
       <div className="grid md:grid-cols-3 gap-8">
