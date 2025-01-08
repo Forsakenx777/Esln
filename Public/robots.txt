@@ -1,0 +1,17 @@
+# robots.txt for ESLN
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.eslnnepal.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow static assets
+Allow: /Public/
+Allow: /static/
+Allow: /images/
+Allow: /assets/
